@@ -108,7 +108,7 @@ void st_show()
 	glPushMatrix();
 	
 
-	int pos = 0;
+	int pos = -400;
 
 	for (int i = 0; i <= top; i++)
 	{
@@ -122,14 +122,14 @@ void st_show()
 		glEnd();
 
 		glColor3f(1, 1, 1);
-		glRasterPos2f(-800, (pos + 10));
+		glRasterPos2f(-810, (pos + 20));
 
 		for (int j = 0; j < strlen(arr_ele[i].value); j++)
 		{
 			
 			glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, arr_ele[i].value[j]);
 		}
-		pos += 50;
+		pos += 150;
 
 	}
 
@@ -144,7 +144,7 @@ void display()
 	
     glClear(GL_COLOR_BUFFER_BIT);
 
-	glColor3f(0, 0.2, 0.5);
+	glColor3f(0, 0.6, 0.2);
 	glRectf(-130, 850,400,1000);
 	
 	glColor3f(1, 0, 0);
