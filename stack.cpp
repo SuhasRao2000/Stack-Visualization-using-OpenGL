@@ -16,8 +16,6 @@ public:
 };
 
 int top = -1;
-int width = 200;
-int height = 25;
 elements arr_ele[30];
 void init()
 {
@@ -199,7 +197,7 @@ void reshape(int w, int h)
 	gluOrtho2D(-1250, 1250, -1250, 1250); 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-
+	
 }
 
 int main(int argc, char* argv[])
